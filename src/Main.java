@@ -9,7 +9,24 @@ public class Main {
         double vd=2.3;
         char vc='A';
         String cad ="hola";
+        boolean vb = false;
+        //mostrando variables por pantalla
+        //+ actua como operador de concatenacion
         System.out.println("vi: "+vi+"vd: "+vd+"vc: "+vc+"cad: "+cad);
+
+        //conversion de tipos de datos
+        vi = (int)2.9 + (int)1.1;
+        //LOS TOMA COMO ENTEROS DESDE EL PRINCIPIO AL HACER CAST EN CADA UNO(INT)
+        System.out.println("vi: " + vi);
+        vi = (int)(2.9 + 1.1);
+        //LOS SUMA CON DECIMALES Y LO DEVUELVE EN ENTERO
+        System.out.println("vi: " + vi);
+        //vi = (int)vb + vb; hay tipos que no so convertibles
+        vi = vc +1;
+        System.out.println("vi(entero): " + vi + " vi(char): " + (char)vi);
+        System.exit(0);
+
+        //leyendo datos del teclado
         Scanner sc=new Scanner(System.in);
 
         System.out.println("Introduzca un valor entero");
