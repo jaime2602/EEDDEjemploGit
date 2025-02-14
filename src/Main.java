@@ -24,7 +24,32 @@ public class Main {
         //vi = (int)vb + vb; hay tipos que no so convertibles
         vi = vc +1;
         System.out.println("vi(entero): " + vi + " vi(char): " + (char)vi);
+
+        //OPERADORES
+        int a = 1 , b=2;
+        System.out.println("a: "+a+" b: "+b);
+        a++; //postincremento(hace la operacion y luego se suma 1)
+        ++b; //preincremento(se suma 1 primero y despues hace la operacion)
+        System.out.println("a: "+a+" b: "+b);
+        int c = a++ * ++b;
+        System.out.println("a: "+a+" b: "+b+" c: "+c);
+        //precedencia de operadores () ++ -- */% +- << = == != >> >=
+        boolean bo = (2+8) < ++a || 2+5*9 == a++ + 43;
+        //10 < ++a || 2+5*9 == a++ + 43;
+        //10 < 4 || 2+5*9 == 4 + 43; (a vale 5)
+        //10 < 4 || 47 == 47
+        //false || true
+        //true
+        System.out.println("bo: " + bo + "a: " + a);
+        bo = ++a < 10 | ++a == 6; //con un solo | se evaluan los dos lados
+        System.out.println("bo: " + bo + "a: " + a);
+
+
+
+
         System.exit(0);
+
+
 
         //leyendo datos del teclado
         Scanner sc=new Scanner(System.in);
