@@ -44,6 +44,17 @@ public class Main {
         bo = ++a < 10 | ++a == 6; //con un solo | se evaluan los dos lados
         System.out.println("bo: " + bo + "a: " + a);
 
+        cad = "hola";
+        //sobrecarga de operadores: el operador se comporta de forma diferente segun sus operandos
+        a= 1+1;//suma algebraica
+        cad= "1" + "1" + 2+4+5;//+ es concatenacion incluir otro tipo se denomina wrapping
+        System.out.println("cad: " + cad);// junta la cadena y lo toma como texto
+        String cad1 = cad.substring(2,4);
+        System.out.println("cad1: " + cad1);
+        bo = "hola".equals("Hola");
+        System.out.println("bo: " + bo);
+
+
 
 
 
