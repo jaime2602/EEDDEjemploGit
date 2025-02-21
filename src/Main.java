@@ -134,6 +134,33 @@ public class Main {
             System.out.println("NUMERO par: "+num);
             if (num%2!=0){
                 System.out.println("El numero: "+num+" es un numero impar");
+
+                enum Calificaciones{us, apr, not, sb};
+                Calificaciones nota0, nota1;
+                nota0 = Calificaciones.apr;
+                nota1 = Calificaciones.not;
+                Calificaciones []notas = new Calificaciones[10];
+                for (int i=0;i<notas.length;i++){
+                    notas[i]=Calificaciones.apr;
+                }
+
+                //definir un array de 10 notas llamado notas 2 con sb
+                //calificaciones es el tipo de dato(enum)
+
+                Calificaciones [] notas2 = new Calificaciones[10];
+                for (int i=0;i<notas2.length;i++){
+                    notas2[i]=Calificaciones.sb;
+                }
+
+                //escribir un bucle for abreviado que sume un array ai de enteros al valor 5 y que de valor 10
+                //mostrar el array con arrays.toString()
+
+                int []ai= {10,10,10,10,10};
+                int suma= 0;
+                for(int pep: ai){
+                    suma+=pep;
+                }
+                System.out.println("ai" + Arrays.toString(ai) + " suma: " + suma);
             }
         }
     }
